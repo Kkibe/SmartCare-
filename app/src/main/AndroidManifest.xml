@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotificationsPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BlogsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PostItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReminderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SingleInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trackers.GlucoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trackers.HeartRateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trackers.BmrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".trackers.BmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.BookmarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PromptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiver" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ADMOB_APP_ID" />
+    </application>
+
+</manifest>

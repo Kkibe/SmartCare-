@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SmartCare</string>
+
+    <string name="ADMOB_APP_ID">ca-app-pub-9576945242972545~9773412619</string>
+    <string name="Onesignal_Id">string goes here</string>
+
+    <string name="INFO_BOOKMARKS_PREFERENCE">INFO_BOOKMARKS_PREFERENCE</string>
+    <string name="INFO_POSTS_PREFERENCE">INFO_POSTS_PREFERENCE</string>
+
+
+    //urls
+    <string name="twitter_profile">http://www.twitter.com/@codespear_org</string>
+    <string name="telegram_channel">https://t.me/nutricon_foundation</string>
+    <string name="whatsapp_channel">https://chat.whatsapp.com/BwNPTEQTR5FABFepXPHe2Q</string>
+    <string name="more_apps_url">https://play.google.com/store/apps/developer?id=Nutricon Foundation</string>
+    <string name="version_name">v1.0.0</string>
+    <string name="smartcare_service_description">Welcome, We offer health and nutrition related content. Have a good experience using our app.</string>
+    <string name="twitter_profile_desc">twitter_profile</string>
+    <string name="telegram_channel_desc">telegram_channel</string>
+    <string name="whatsapp_channel_desc">whatsapp_channel</string>
+    <string name="social_icons_header">Get Connected:</string>
+</resources>

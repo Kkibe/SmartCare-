@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nutricon.smartcare.fragments.AccountFragment"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/noUserData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="Not Logged In"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_bottom"
+                android:drawableEnd="@drawable/baseline_login_24"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="LOGIN"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_account_circle_24"
+                />
+
+            <TextView
+                android:id="@+id/textUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_male_24"
+                android:text="John Doe"
+                android:textSize="24sp"
+                />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="kkibetkkoir@gmail.com"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/textPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+254 70000020"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="18 Years"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello there, try to write something unique about yourself to your account."
+                android:textSize="18sp"
+                android:textStyle="italic"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adViewContainer"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_background"
+            app:cardElevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/btnNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/baseline_notifications_active_24"
+                android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/material_dynamic_secondary50"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="Notifications"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_background"
+            app:cardElevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/btnBookmarks"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/baseline_bookmarks_24"
+                android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/material_dynamic_secondary50"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="Bookmarks"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_background"
+            app:cardElevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/baseline_settings_24"
+                android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/material_dynamic_secondary50"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="Settings"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/transparent_background"
+            app:cardElevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/baseline_edit_24"
+                android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/material_dynamic_secondary50"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="Edit Profile"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/transparent_background"
+            app:cardElevation="5dp"
+            >
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableEnd="@drawable/baseline_logout_24"
+                android:drawableTint="@color/material_dynamic_secondary50"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="Log Out"
+                android:textSize="18sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

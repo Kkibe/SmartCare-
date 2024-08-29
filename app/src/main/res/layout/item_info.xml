@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    app:strokeColor="?attr/colorPrimary"
+    app:strokeWidth="1dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/transparent_background"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="What is blood sugar and how does it affect your health?"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:drawablePadding="4dp"
+            android:drawableEnd="@drawable/baseline_star_outline_24"
+            android:drawableTint="@color/material_dynamic_secondary50"/>
+        <!--<ImageView
+            android:id="@+id/buttonFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="centerInside"
+            android:src="@drawable/baseline_star_outline_24"/> -->
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

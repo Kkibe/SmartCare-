@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FeedbackActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/reviewCard"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="How can we help you?"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:id="@+id/textUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/background_edittext"
+            android:drawableEnd="@drawable/baseline_account_circle_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/material_dynamic_secondary50"
+            android:ems="10"
+            android:hint="Enter You Name"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            />
+
+        <EditText
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Write your message here..."
+            android:inputType="text"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/transparent_background"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Send Feedback"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reviewCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_above="@id/adViewContainer"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/purple_transparent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want to rate this app?"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate Now"
+                android:textSize="22sp"
+                android:textColor="@color/teal_700"
+                android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+                android:drawableTint="@color/teal_700"
+                android:drawablePadding="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

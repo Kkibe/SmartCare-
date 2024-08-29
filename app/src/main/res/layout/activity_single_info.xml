@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nutricon.smartcare.activities.SingleInfoActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adViewContainer"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="5dp"
+                    app:strokeColor="@color/purple_500"
+                    app:strokeWidth="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textReadingTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="10dp"
+                        android:text="12 min read"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11 Aug 2024"
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/care"
+                />
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/btnLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_favorite_border_24"
+                        android:drawableTint="@color/material_dynamic_secondary50"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="12"
+                        android:textSize="22sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/btnBookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/baseline_bookmark_border_24"
+                        android:drawableTint="@color/material_dynamic_secondary50"
+                        android:drawablePadding="5dp"
+                        android:padding="5dp"
+                        android:text="10"
+                        android:textSize="22sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/btnShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_share_24"
+                        android:drawableTint="@color/material_dynamic_secondary50"
+                        android:padding="5dp"
+                        android:textSize="22sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="Lorem ipsum dolo sit amet. Ipsum dolo sit amet. "
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet. Ipsum dolo sit amet. Lorem ipsum dolo sit amet."
+                android:textSize="20sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                >
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    app:strokeColor="@color/purple_500"
+                    app:strokeWidth="1dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="diabetes"
+                        android:textSize="18sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    app:strokeColor="@color/purple_500"
+                    app:strokeWidth="1dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="nutrition"
+                        android:textSize="18sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/transparent_background"
+                    app:cardElevation="5dp"
+                    app:strokeColor="@color/purple_500"
+                    app:strokeWidth="1dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/tag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="3dp"
+                        android:paddingHorizontal="10dp"
+                        android:text="lifestyle"
+                        android:textSize="18sp"
+                        />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:background="@drawable/transparent_background"
+                app:cardElevation="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/btnMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:drawableTint="@color/material_dynamic_secondary50"
+                    android:padding="5dp"
+                    android:text="Explore More"
+                    android:textSize="20sp"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

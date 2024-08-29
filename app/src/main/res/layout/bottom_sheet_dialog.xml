@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/transparent_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+
+        <TextView
+            android:id="@+id/btnGlucose"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/baseline_water_drop_24"
+            android:drawableTint="@color/material_dynamic_secondary50"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:text="Track Blood Glucose"
+            android:textSize="18sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+        <TextView
+        android:id="@+id/btnBmi"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:text="Calculate BMI"
+        android:textSize="18sp"
+        android:drawableRight="@drawable/baseline_health_and_safety_24"
+            android:drawableTint="@color/material_dynamic_secondary50"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+        <TextView
+        android:id="@+id/btnBmr"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center_vertical"
+        android:text="Calculate BMR"
+        android:textSize="18sp"
+        android:drawableRight="@drawable/baseline_health_and_safety_24"
+            android:drawableTint="@color/material_dynamic_secondary50"
+        />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/btnReminder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:text="Add Reminder"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/baseline_add_alarm_24"
+            android:drawableTint="@color/material_dynamic_secondary50"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_background"
+        app:cardElevation="5dp"
+        >
+        <TextView
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="center_vertical"
+            android:text="Give Us Feedback"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/baseline_textsms_24"
+            android:drawableTint="@color/material_dynamic_secondary50"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

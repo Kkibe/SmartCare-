@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563760969886",
+    "project_id": "smartmedic-1",
+    "storage_bucket": "smartmedic-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563760969886:android:dbf9f25040e0347f34e38f",
+        "android_client_info": {
+          "package_name": "com.health.smartcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563760969886-m1100j42jl9aev6k8nq30qq16kb4fdfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDilNrmhOiwXDmDnrvnYLphXoG68yymPsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563760969886-m1100j42jl9aev6k8nq30qq16kb4fdfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

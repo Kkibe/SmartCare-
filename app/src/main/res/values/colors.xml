@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#07c1dd</color>
+    <color name="purple_500">#2196F3</color>
+    <color name="purple_700">#1253a0</color>
+    <color name="purple_transparent"></color>
+    <color name="teal_200">#44c0c5</color>
+    <color name="teal_700">#2196f3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="inbox_color">#e5e5e5</color>
+    <color name="outbox_color">#99eeff</color>
+    <color name="inbox_color_start">#c9c9c9</color>
+    <color name="red">#F44F4F</color>
+
+    <color name="material_lime_a800">#AFB42B</color>
+    <color name="material_lime_50">#F9FBE7</color>
+</resources>
